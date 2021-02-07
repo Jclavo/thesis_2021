@@ -1,0 +1,65 @@
+\documentclass[a4paper, 12pt]{report}
+
+\usepackage[left = 3cm, top = 2.5cm, bottom = 2cm, right = 2cm]{geometry}
+
+\usepackage{graphicx}
+\usepackage[spanish,es-tabla]{babel} % Idioma español con tablas
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage[utf8]{inputenc}         % Para escribir en castellano
+\usepackage[T1]{fontenc}
+\usepackage{color}
+\usepackage{alltt}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{anyfontsize}
+\setcounter{secnumdepth}{3} %para que ponga 1.1.1.1 en subsubsecciones
+\setcounter{tocdepth}{3}    % para que ponga subsubsecciones en el indice
+\usepackage{setspace}       % Usado para %\onehalfspace  \doublespacing  \singlespace
+\usepackage{booktabs}       % Para formar tablas
+%\usepackage{longtable}     % Usado para diseñar grandes tablas.
+
+%\usepackage{algorithmic}
+%\usepackage{algorithm}
+
+\usepackage[x11names,table]{xcolor}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Tables-related packages %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{multirow}
+%\usepackage{multicol}
+%\usepackage{array,colortbl}
+
+\usepackage[round]{natbib} 
+\bibliographystyle{apalike}
+
+\usepackage{hyperref}
+ 
+%\newcommand{\yy}{{\'{\i} }}
+%\newcommand{\y}{\'{\i}}
+%\textheight 21cm
+
+\begin{document}
+
+\baselineskip 1cm
+\pagestyle{plain}
+\input{Datos.tex}            % Datos de la tesis
+\listoffigures               % indice de figuras
+\addcontentsline{toc}{chapter}{Índice de Figuras}
+\listoftables                % indice de tablas
+\addcontentsline{toc}{chapter}{Índice de Tablas}
+\tableofcontents             % indice de materias
+\input{Caps.tex}             % Capitulos de la tesis
+\bibliography{Bibliografia}  % Bibliografia formato APA
+%\input{Apendice.tex}         % Apendice
+\end{document}
+
+
+
+
+
+
